@@ -1,6 +1,7 @@
 import { Badge } from '@material-ui/core'
 import { Search, ShoppingCartOutlined } from '@material-ui/icons'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { mobile } from '../responsive'
 
@@ -75,15 +76,19 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>LAMA.</Logo>
+          <Logo>E Boutique</Logo>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>SIGN IN</MenuItem>
+          <MenuItem><Link to='/product'> Product</Link></MenuItem>
+          <MenuItem><Link to='/productlist'> Product List</Link></MenuItem>
+          <MenuItem><Link to='/register'> REGISTER</Link></MenuItem>
+          <MenuItem><Link to='/login'>SIGN IN</Link></MenuItem>
           <MenuItem>
+            <Link to='/cart'>
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined/>
             </Badge>
+            </Link>
           </MenuItem>
         </Right>
       </Wrapper>
