@@ -76,11 +76,10 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>E Boutique</Logo>
+          <Logo><Link to='/'>E Boutique</Link></Logo>
         </Center>
         <Right>
-          <MenuItem><Link to='/product'> Product</Link></MenuItem>
-          <MenuItem><Link to='/productlist'> Product List</Link></MenuItem>
+          <MenuItem><Link to='/productlist'> Products</Link></MenuItem>
           <MenuItem><Link to='/register'> REGISTER</Link></MenuItem>
           <MenuItem><Link to='/login'>SIGN IN</Link></MenuItem>
           <MenuItem>
